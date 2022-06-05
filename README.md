@@ -17,14 +17,14 @@
 
 ---
 
-## top 명령어
-top 명령어는 현재 OS의 상태를 나타내주는 명령어입니다.
+# top 명령어
+top 명령어는 **현재 OS의 상태**를 나타내주는 명령어입니다.
 아래 이미지는 top 명령을 실행했을 때 나타나는 모습입니다.
 
 ![image](https://user-images.githubusercontent.com/88638058/172028686-adfe74dd-f4fc-42ca-92d3-405d89e25fe1.png)
 
-### 요약 영역
-요약 영역은 위 이미지에서 강조된 라인 윗부분을 말합니다.
+## 요약 영역
+요약 영역은 위 이미지에서 **강조된 라인 윗부분**을 말합니다.
 요약 영역은 전체 프로세스가 OS에 대해서 리소스를 어느정도 차지하고 있는지를 알려줍니다.
 요약 영역에서 확인할 수 있는 값은 아래와 같습니다.
 
@@ -43,4 +43,25 @@ top 명령어는 현재 OS의 상태를 나타내주는 명령어입니다.
 
 ---
 
-## System time, Uptime, User session
+&nbsp;
+
+![image](https://user-images.githubusercontent.com/88638058/172029496-50cc2b37-3ae6-4eba-a113-ed7197194793.png)
+
+### System time, Uptime, User session
+가장 먼저 보이는 숫자는 **System time** 입니다. 이는 GMT 기준으로 표시되어 있습니다.
+`up` 다음으로 표시되는 것은 **Uptime** 으로, OS가 구동된 후 경과일을 나타냅니다.
+그 다음 `users` 왼쪽에 표시된 숫자는 현재 접속중인 세션 수 입니다.
+
+좀 더 자세한 세션 정보가 궁금하다면 `who` 명령을 이용할 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/88638058/172029249-d53ef4c6-9ccc-4c8f-ac36-7eccd7071fe8.png)
+
+---
+
+&nbsp;
+
+![image](https://user-images.githubusercontent.com/88638058/172029503-a620671d-4cfa-4a9d-be8a-6428e4412101.png)
+
+### Load average
+Load average 영역은 **CPU Load의 이동 평균**을 나타냅니다. 3개의 실수가 `,`로 구분되어 있는데 앞에서부터
+각각 1분, 5분, 15분에 대한 평균값을 나타냅니다.
