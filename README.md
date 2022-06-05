@@ -9,11 +9,12 @@
 
 ---
 
-### 리눅스 명령어
-- top
-- ps
-- jobs
-- kill
+### 목차
+- [top](#top-명령어)
+- [ps](#ps-명령어)
+- [kill](#kill-명령어)
+- [jobs](#jobs-명령어)
+- vim 매크로
 
 ---
 
@@ -45,28 +46,25 @@ top 명령어는 **현재 OS의 상태**를 나타내주는 명령어입니다.
 ---
 ### System time, Uptime, User session
 
-![image](https://user-images.githubusercontent.com/88638058/172029496-50cc2b37-3ae6-4eba-a113-ed7197194793.png)
-
 가장 먼저 보이는 숫자는 **System time** 입니다. 이는 GMT 기준으로 표시되어 있습니다.
 `up` 다음으로 표시되는 것은 **Uptime** 으로, OS가 구동된 후 경과일을 나타냅니다.
 그 다음 `users` 왼쪽에 표시된 숫자는 현재 접속중인 세션 수 입니다.
+
+![image](https://user-images.githubusercontent.com/88638058/172029496-50cc2b37-3ae6-4eba-a113-ed7197194793.png)
 
 좀 더 자세한 세션 정보가 궁금하다면 `who` 명령을 이용할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/88638058/172029249-d53ef4c6-9ccc-4c8f-ac36-7eccd7071fe8.png)
 
 ---
-
 ### Load average
-
-![image](https://user-images.githubusercontent.com/88638058/172029503-a620671d-4cfa-4a9d-be8a-6428e4412101.png)
-
 Load average 영역은 **CPU Load의 이동 평균**을 나타냅니다. 3개의 실수가 `,`로 구분되어 있는데 앞에서부터
 각각 1분, 5분, 15분에 대한 평균값을 나타냅니다. CPU의 코어가 **1**개인 경우는 `1.0`이 100%의 부하를 말하고,
 **8**개인 경우는 `8.0`이 100%의 부하를 나타냅니다.
 
----
+![image](https://user-images.githubusercontent.com/88638058/172029503-a620671d-4cfa-4a9d-be8a-6428e4412101.png)
 
+---
 ### Tasks info
 2번째 줄은 Task에 관한 정보를 나타냅니다.
 
@@ -81,7 +79,6 @@ Load average 영역은 **CPU Load의 이동 평균**을 나타냅니다. 3개의
 | zombies | 좀비상태의 프로세스 |
 
 ---
-
 ### CPU info
 
 ![image](https://user-images.githubusercontent.com/88638058/172029715-46183774-ad78-4bd4-a59c-7c43413e2852.png)
@@ -100,7 +97,6 @@ Load average 영역은 **CPU Load의 이동 평균**을 나타냅니다. 3개의
 | st | VM에서 사용하여 대기하는 비율 |
 
 ---
-
 ### Memory usage
 
 ![image](https://user-images.githubusercontent.com/88638058/172029805-68f4af5b-cd14-41aa-97df-690af970ffad.png)
@@ -109,6 +105,7 @@ Load average 영역은 **CPU Load의 이동 평균**을 나타냅니다. 3개의
 2번째 줄은 가상메모리, 즉 SWAP 사용량을 나타냅니다.
 
 ---
+&nbsp;
 
 ## 디테일 영역
 
